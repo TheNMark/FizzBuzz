@@ -15,6 +15,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
+        // print(fizzBuzz1())
+        // print(fizzBuzz2())
+        
+        
+    }
+ 
+    // SOLUTION 1 - Conditionals
+    // Note: this solution, as it is, doesn't replace the numbers;
+    
+    func fizzBuzz1() {
         
         for i in 1...100 {
             
@@ -33,9 +43,35 @@ class ViewController: UIViewController {
             }
             
             print(i)
+            
         }
         
+    }
+    
+    // SOLUTION 2 - Switch & Pattern Matching
+    
+    
+    func fizzBuzz2() {
         
+        for i in 1...100 {
+            
+            switch (i % 3 == 0, i % 5 == 0) {
+                
+            case (true, false):
+                print("Fizz")
+                
+            case (false, true):
+                print("Buzz")
+                
+            case (true, true):
+                print("FizzBuzz")
+                
+            default:
+                print(i)
+                
+            }
+            
+        }
         
     }
     
