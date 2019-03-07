@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
  
     // SOLUTION 1 - Conditionals
-    // Note: this solution, as it is, doesn't replace the numbers;
+    // Note: this solution, as it is, doesn't replace the numbers
     
     func fizzBuzz1() {
         
